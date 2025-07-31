@@ -1,0 +1,89 @@
+this CSS will make the column values colored based on the value provided.
+
+CSS need to be applied on page level
+
+page --> CSS --> Inline
+
+#OFR td[data-enable-link="N"] a {
+    color: grey;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}
+
+#OFR .t-fht-thead{
+  overflow: auto !important;
+}
+
+.a-Button.a-IG-button.a-IG-button--controls {  display: none;}
+.a-IG-controls-item--controlBreak  { display:none; }
+.a-IG-controls-item--aggregate  { display:none; }
+tr.a-GV-controlBreak th.a-GV-controlBreakHeader {
+
+background-color: rgb(229, 227, 227);
+color : black;
+font-weight: bold;
+}
+tr.is-aggregate .a-GV-cell { /* subtotals */
+
+background-color: rgb(229, 227, 227);
+color : black;
+font-weight: bold;
+}
+
+.erp-default {
+  background-color: #1DA1F2 !important; /* Blue */
+  font-weight: bold !important;
+  color: white !important;
+  padding: 4px 8px !important;
+  border-radius: 4px !important;
+  display: table-cell !important;
+}
+
+.wms-default {
+  background-color: #C8E6C9 !important; /* Light green */
+  font-weight: bold !important;
+  color: black !important;
+  padding: 4px 8px !important;
+  border-radius: 4px !important;
+  display: table-cell !important;
+}
+
+.discrepancy-color {
+  font-weight: bold !important;
+  padding: 4px 8px !important;
+  border-radius: 4px !important;
+  display: table-cell !important;
+  color: white !important;
+}
+
+.discrepancy-color[data-val^="+"] {
+  background-color: #1DA1F2 !important;
+}
+
+.discrepancy-color[data-val^="1"],
+.discrepancy-color[data-val^="2"],
+.discrepancy-color[data-val^="3"],
+.discrepancy-color[data-val^="4"],
+.discrepancy-color[data-val^="5"],
+.discrepancy-color[data-val^="6"],
+.discrepancy-color[data-val^="7"],
+.discrepancy-color[data-val^="8"],
+.discrepancy-color[data-val^="9"] {
+  background-color: #1DA1F2 !important;
+}
+
+.discrepancy-color[data-val^="-"] {
+  background-color: #C8E6C9 !important;
+  color: black !important;
+}
+
+and we need to assign the same CSS elements to our respective columns :
+
+Column --> Column Formatting --> HTML Expression
+
+<span class="erp-default">#ERP_QTY#</span> 
+
+if we want to pass the column value to display the color based on the value displayed
+
+<span class="discrepancy-color" data-val="#DISCREPANCY#">#DISCREPANCY#</span>
