@@ -1,0 +1,90 @@
+place it in the page css -->
+.my-rounded-list .t-Card-wrap {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.12) !important;
+    border: 1px solid #ddd !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    text-decoration: none !important;
+    color: inherit !important;
+    background-color: #f1f1f1 !important; /* Light grey top section */
+    margin-bottom: 1rem !important;
+}
+
+/* Circle icon container */
+.my-rounded-list .t-Card-icon {
+    border-radius: 50% !important;
+    width: 60px !important;
+    height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 20px auto 0 auto !important;
+    color: white !important;
+}
+
+/* Icon size */
+.my-rounded-list .t-Card-icon .t-Icon {
+    font-size: 28px !important;
+    line-height: 1 !important;
+}
+
+/* Description section */
+.my-rounded-list .t-Card-titleWrap {
+    background-color: #FFFFFF !important;
+    text-align: center !important;
+    padding: 16px !important;
+    flex-grow: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.my-rounded-list .t-Card-body {
+  background-color: #ffffff !important; /* White background */
+  padding: 12px !important;
+}
+
+.my-rounded-list .t-Card-titleWrap,
+.my-rounded-list .t-Card-desc,
+.my-rounded-list .t-Card-info {
+  background-color: #ffffff !important;
+  text-align: center;
+  font-weight: bold;
+}
+
+.my-rounded-list .t-Card-title {
+    font-weight: bold !important;
+    font-size: 20px !important;
+    color: #3a4750 !important;
+    margin: 0 !important;
+}
+
+/* Optional subtitle styling */
+.my-rounded-list .t-Card-subtitle {
+    display: none !important;
+}
+
+/* === Icon background colors === */
+.icon-color-orange .t-Card-icon {
+    background-color: #FF8C00 !important;
+}
+
+.icon-color-forestgreen .t-Card-icon {
+    background-color: #228B22 !important;
+}
+
+.icon-color-lavender .t-Card-icon {
+    background-color: #AC78BA !important;
+}
+
+.icon-color-mauve .t-Card-icon {
+    background-color: #c9bfbf !important;
+}
+
+.icon-color-darkgrey .t-Card-icon {
+    background-color: #5A5A5A !important;
+}
+
